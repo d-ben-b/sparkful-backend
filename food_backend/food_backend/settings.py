@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os  # Add this import
+import dj_database_url  # Add this import
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,19 +85,19 @@ WSGI_APPLICATION = 'food_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# Add the new DATABASES configuration using dj_database_url
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql', # Use mysql engine
-        'NAME': 'sparkful',         # Replace with your DB name
-        'USER': 'root',         # Replace with your DB user
-        'PASSWORD': 'admin', # Replace with your DB password
-        'HOST': '127.0.0.1',                  # Or your DB host (e.g., 'localhost' or IP)
-        'PORT': '3306',                       # Default MySQL port
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'", # Recommended for MySQL
-        },
-    }
+    'default': dj_database_url.config(
+        # Replace this with your local development database URL if needed
+        default='postgresql://sparkful_user:VtteLiGmOiMhctqeqlwMZw7V6RFZ7l3E@dpg-d0493fk9c44c739d9gg0-a.oregon-postgres.render.com/sparkful',
+        conn_max_age=600  # Optional: connection pooling setting
+    )
 }
+
+# If Render provides a PostgreSQL database, ensure psycopg2 is installed:
+# pip install psycopg2-binary
+# The DATABASE_URL from Render will typically start with postgres://...
+# dj_database_url handles the engine detection automatically.
 
 
 # Password validation

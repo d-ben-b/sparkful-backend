@@ -117,6 +117,68 @@ def run_yolo_inference(image_path):
 
 @api_view(['POST'])
 @parser_classes([MultiPartParser, FormParser])
+def initialize(request):
+    """
+    Initializes or updates the client with ID=1, setting their coin count to 30.
+    Also initializes two default challenges.
+    """
+    try:
+        # --- Initialize Client ---
+        client, client_created = Client.objects.get_or_create(
+            id=1,
+            defaults={'name': 'Initial Client', 'coin': 30}  # Provide defaults if creating
+        )
+        if not client_created:
+            client.coin = 30
+            client.save(update_fields=['coin'])
+            logger.info(f"Updated coin for existing Client ID=1 to 30.")
+        else:
+            logger.info(f"Created new Client with ID=1 and coin=30.")
+
+        # --- Initialize Challenges ---
+        challenge1_desc = '減糖挑戰'
+        challenge2_desc = '一周不吃炸物挑戰'
+        challenge_type = 'official'
+
+        challenge1, challenge1_created = Challenge.objects.get_or_create(
+            desc=challenge1_desc,
+            defaults={'type': challenge_type}
+        )
+        if challenge1_created:
+            logger.info(f"Created challenge: {challenge1_desc}")
+        else:
+            # Optionally update the type if it changed, though unlikely for defaults
+            if challenge1.type != challenge_type:
+                challenge1.type = challenge_type
+                challenge1.save(update_fields=['type'])
+            logger.info(f"Challenge '{challenge1_desc}' already exists.")
+
+        challenge2, challenge2_created = Challenge.objects.get_or_create(
+            desc=challenge2_desc,
+            defaults={'type': challenge_type}
+        )
+        if challenge2_created:
+            logger.info(f"Created challenge: {challenge2_desc}")
+        else:
+            if challenge2.type != challenge_type:
+                challenge2.type = challenge_type
+                challenge2.save(update_fields=['type'])
+            logger.info(f"Challenge '{challenge2_desc}' already exists.")
+
+        return Response({
+            "message": f"Client ID=1 {'created' if client_created else 'updated'} and challenges initialized/verified successfully.",
+            "client_id": client.id,
+            "coin": client.coin,
+            "challenges_initialized": [challenge1.desc, challenge2.desc]
+        }, status=200)
+
+    except Exception as e:
+        logger.error(f"Error during initialization: {e}", exc_info=True)
+        return Response({"error": f"Initialization failed: {str(e)}"}, status=500)
+
+
+@api_view(['POST'])
+@parser_classes([MultiPartParser, FormParser])
 def upload_api(request):
     image = request.FILES.get('image')
 
