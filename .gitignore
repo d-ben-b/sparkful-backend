@@ -156,12 +156,6 @@ cython_debug/
 ehthumbs.db
 Thumbs.db
 
-# AI Model files
-*.pt
-*.onnx
-*.pb
-*.tflite
-
 # Specific to this project
 food_backend/models/best.pt # Explicitly ignore the model file if needed
 
