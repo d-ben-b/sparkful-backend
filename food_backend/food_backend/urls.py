@@ -32,6 +32,7 @@ urlpatterns = [
     path('api/upload-post', views.upload_post),
     path('api/get-user-coins', views.get_user_coins),
     path('api/initialize', views.initialize),
+    path('/',views.initial_test),
 ]
 
 # Optionally, if you still want the debug-only configuration:

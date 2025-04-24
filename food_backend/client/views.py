@@ -433,3 +433,7 @@ def get_user_coins(request):
         return Response({"error": "Client not found"}, status=404)
     except Exception as e:
         return Response({"error": str(e)}, status=500)
+@api_view(['GET'])
+def initial_test(request):
+    # Test endpoint to check if the server is running
+    return Response({"message": "Server is running!"})
