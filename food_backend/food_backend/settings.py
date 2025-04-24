@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-%1)ar3ezmvf67cs_a(9lzbx#ty^on=z)2u2zd)n3-317$%34t^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1","sparkful-backend.onrender.com"]
+ALLOWED_HOSTS = ["127.0.0.1","sparkful-backend.onrender.com","0.0.0.0","localhost"]
 
 CORS_ALLOW_ALL_ORIGINS = False
 
