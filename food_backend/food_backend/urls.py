@@ -20,6 +20,10 @@ from client import views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.static import serve  # Import serve
+from django.http import HttpResponse
+
+def health_check(request):
+    return HttpResponse("OK")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +36,7 @@ urlpatterns = [
     path('api/upload-post', views.upload_post),
     path('api/get-user-coins', views.get_user_coins),
     path('api/initialize', views.initialize),
-    path('/',views.initial_test),
+    path('', health_check, name='health-check'),
 ]
 
 # Optionally, if you still want the debug-only configuration:
