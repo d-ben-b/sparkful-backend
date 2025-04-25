@@ -1,0 +1,1582 @@
+{
+  "foods": [
+    {
+      "name": "rice",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "eels on rice",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pilaf",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "chicken-'n'-egg on rice",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pork cutlet on rice",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "beef curry",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "sushi",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "chicken rice",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fried rice",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tempura bowl",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "bibimbap",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "toast",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "croissant",
+      "protein": 0.1,
+      "starch": 0.7,
+      "cellulose": 0.2
+    },
+    {
+      "name": "roll bread",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "raisin bread",
+      "protein": 0.1,
+      "starch": 0.7,
+      "cellulose": 0.2
+    },
+    {
+      "name": "chip butty",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "hamburger",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pizza",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "sandwiches",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "udon noodle",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tempura udon",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "soba noodle",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "ramen noodle",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "beef noodle",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tensin noodle",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fried noodle",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "spaghetti",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "japanese-style pancake",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "takoyaki",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "gratin",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "sauteed vegetables",
+      "protein": 0.1,
+      "starch": 0.1,
+      "cellulose": 0.8
+    },
+    {
+      "name": "croquette",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "grilled eggplant",
+      "protein": 0.1,
+      "starch": 0.1,
+      "cellulose": 0.8
+    },
+    {
+      "name": "sauteed spinach",
+      "protein": 0.2,
+      "starch": 0.1,
+      "cellulose": 0.7
+    },
+    {
+      "name": "vegetable tempura",
+      "protein": 0.1,
+      "starch": 0.3,
+      "cellulose": 0.6
+    },
+    {
+      "name": "miso soup",
+      "protein": 0.3,
+      "starch": 0.1,
+      "cellulose": 0.6
+    },
+    {
+      "name": "potage",
+      "protein": 0.2,
+      "starch": 0.3,
+      "cellulose": 0.5
+    },
+    {
+      "name": "sausage",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "oden",
+      "protein": 0.3,
+      "starch": 0.4,
+      "cellulose": 0.3
+    },
+    {
+      "name": "omelet",
+      "protein": 0.6,
+      "starch": 0.1,
+      "cellulose": 0.3
+    },
+    {
+      "name": "ganmodoki",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "jiaozi",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "stew",
+      "protein": 0.4,
+      "starch": 0.3,
+      "cellulose": 0.3
+    },
+    {
+      "name": "teriyaki grilled fish",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "fried fish",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "grilled salmon",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "salmon meuniere",
+      "protein": 0.7,
+      "starch": 0.2,
+      "cellulose": 0.1
+    },
+    {
+      "name": "sashimi",
+      "protein": 0.9,
+      "starch": 0.0,
+      "cellulose": 0.1
+    },
+    {
+      "name": "grilled pacific saury",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "sukiyaki",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "sweet and sour pork",
+      "protein": 0.4,
+      "starch": 0.3,
+      "cellulose": 0.3
+    },
+    {
+      "name": "lightly roasted fish",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "steamed egg hotchpotch",
+      "protein": 0.6,
+      "starch": 0.1,
+      "cellulose": 0.3
+    },
+    {
+      "name": "tempura",
+      "protein": 0.3,
+      "starch": 0.4,
+      "cellulose": 0.3
+    },
+    {
+      "name": "fried chicken",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "sirloin cutlet",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "nanbanzuke",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "boiled fish",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "seasoned beef with potatoes",
+      "protein": 0.4,
+      "starch": 0.4,
+      "cellulose": 0.2
+    },
+    {
+      "name": "hambarg steak",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "steak",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "dried fish",
+      "protein": 0.9,
+      "starch": 0.0,
+      "cellulose": 0.1
+    },
+    {
+      "name": "ginger pork saute",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "spicy chili-flavored tofu",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "yakitori",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "cabbage roll",
+      "protein": 0.3,
+      "starch": 0.3,
+      "cellulose": 0.4
+    },
+    {
+      "name": "egg sunny-side up",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "natto",
+      "protein": 0.6,
+      "starch": 0.1,
+      "cellulose": 0.3
+    },
+    {
+      "name": "cold tofu",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "egg roll",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "chilled noodle",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "stir-fried beef and peppers",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "simmered pork",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "boiled chicken and vegetables",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "sashimi bowl",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "sushi bowl",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fish-shaped pancake with bean jam",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "shrimp with chili sauce",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "roast chicken",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "steamed meat dumpling",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "omelet with fried rice",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "cutlet curry",
+      "protein": 0.4,
+      "starch": 0.4,
+      "cellulose": 0.2
+    },
+    {
+      "name": "spaghetti meat sauce",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fried shrimp",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "potato salad",
+      "protein": 0.2,
+      "starch": 0.5,
+      "cellulose": 0.3
+    },
+    {
+      "name": "green salad",
+      "protein": 0.1,
+      "starch": 0.1,
+      "cellulose": 0.8
+    },
+    {
+      "name": "macaroni salad",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "japanese tofu and vegetable chowder",
+      "protein": 0.4,
+      "starch": 0.2,
+      "cellulose": 0.4
+    },
+    {
+      "name": "pork miso soup",
+      "protein": 0.4,
+      "starch": 0.2,
+      "cellulose": 0.4
+    },
+    {
+      "name": "chinese soup",
+      "protein": 0.3,
+      "starch": 0.2,
+      "cellulose": 0.5
+    },
+    {
+      "name": "beef bowl",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "kinpira-style sauteed burdock",
+      "protein": 0.1,
+      "starch": 0.2,
+      "cellulose": 0.7
+    },
+    {
+      "name": "rice ball",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pizza toast",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "dipping noodles",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "hot dog",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "french fries",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "mixed rice",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "goya chanpuru",
+      "protein": 0.3,
+      "starch": 0.2,
+      "cellulose": 0.5
+    },
+    {
+      "name": "green curry",
+      "protein": 0.3,
+      "starch": 0.4,
+      "cellulose": 0.3
+    },
+    {
+      "name": "okinawa soba",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "mango pudding",
+      "protein": 0.1,
+      "starch": 0.3,
+      "cellulose": 0.6
+    },
+    {
+      "name": "almond jelly",
+      "protein": 0.2,
+      "starch": 0.3,
+      "cellulose": 0.5
+    },
+    {
+      "name": "jjigae",
+      "protein": 0.4,
+      "starch": 0.3,
+      "cellulose": 0.3
+    },
+    {
+      "name": "dak galbi",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "dry curry",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "kamameshi",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "rice vermicelli",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "paella",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tanmen",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "kushikatu",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "yellow curry",
+      "protein": 0.3,
+      "starch": 0.4,
+      "cellulose": 0.3
+    },
+    {
+      "name": "pancake",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "champon",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "crape",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tiramisu",
+      "protein": 0.2,
+      "starch": 0.4,
+      "cellulose": 0.4
+    },
+    {
+      "name": "waffle",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "rare cheese cake",
+      "protein": 0.3,
+      "starch": 0.4,
+      "cellulose": 0.3
+    },
+    {
+      "name": "shortcake",
+      "protein": 0.2,
+      "starch": 0.5,
+      "cellulose": 0.3
+    },
+    {
+      "name": "chop suey",
+      "protein": 0.3,
+      "starch": 0.2,
+      "cellulose": 0.5
+    },
+    {
+      "name": "twice cooked pork",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "mushroom risotto",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "samul",
+      "protein": 0.3,
+      "starch": 0.3,
+      "cellulose": 0.4
+    },
+    {
+      "name": "zoni",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "french toast",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fine white noodles",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "minestrone",
+      "protein": 0.2,
+      "starch": 0.3,
+      "cellulose": 0.5
+    },
+    {
+      "name": "pot au feu",
+      "protein": 0.4,
+      "starch": 0.3,
+      "cellulose": 0.3
+    },
+    {
+      "name": "chicken nugget",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "namero",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "french bread",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "rice gruel",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "broiled eel bowl",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "clear soup",
+      "protein": 0.2,
+      "starch": 0.2,
+      "cellulose": 0.6
+    },
+    {
+      "name": "yudofu",
+      "protein": 0.6,
+      "starch": 0.1,
+      "cellulose": 0.3
+    },
+    {
+      "name": "mozuku",
+      "protein": 0.2,
+      "starch": 0.1,
+      "cellulose": 0.7
+    },
+    {
+      "name": "inarizushi",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pork loin cutlet",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "pork fillet cutlet",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "chicken cutlet",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "ham cutlet",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "minced meat cutlet",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "thinly sliced raw horsemeat",
+      "protein": 0.9,
+      "starch": 0.0,
+      "cellulose": 0.1
+    },
+    {
+      "name": "bagel",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "scone",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tortilla",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tacos",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "nachos",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "meat loaf",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "scrambled egg",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "rice gratin",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "lasagna",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "caesar salad",
+      "protein": 0.2,
+      "starch": 0.1,
+      "cellulose": 0.7
+    },
+    {
+      "name": "oatmeal",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "fried pork dumplings served in soup",
+      "protein": 0.4,
+      "starch": 0.4,
+      "cellulose": 0.2
+    },
+    {
+      "name": "oshiruko",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "muffin",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "popcorn",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "cream puff",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "doughnut",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "apple pie",
+      "protein": 0.1,
+      "starch": 0.7,
+      "cellulose": 0.2
+    },
+    {
+      "name": "parfait",
+      "protein": 0.2,
+      "starch": 0.4,
+      "cellulose": 0.4
+    },
+    {
+      "name": "fried pork in scoop",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "lamb kebabs",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "dish consisting of stir-fried potato, eggplant and green pepper",
+      "protein": 0.1,
+      "starch": 0.4,
+      "cellulose": 0.5
+    },
+    {
+      "name": "roast duck",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "hot pot",
+      "protein": 0.4,
+      "starch": 0.2,
+      "cellulose": 0.4
+    },
+    {
+      "name": "pork belly",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "xiao long bao",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "moon cake",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "custard tart",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "beef noodle soup",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pork cutlet",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "minced pork rice",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fish ball soup",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "oyster omelette",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "glutinous oil rice",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "turnip pudding",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "stinky tofu",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "lemon fig jelly",
+      "protein": 0.1,
+      "starch": 0.3,
+      "cellulose": 0.6
+    },
+    {
+      "name": "khao soi",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "sour prawn soup",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "thai papaya salad",
+      "protein": 0.1,
+      "starch": 0.2,
+      "cellulose": 0.7
+    },
+    {
+      "name": "boned, sliced hainan-style chicken with marinated rice",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "hot and sour, fish and vegetable ragout",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "stir-fried mixed vegetables",
+      "protein": 0.1,
+      "starch": 0.1,
+      "cellulose": 0.8
+    },
+    {
+      "name": "beef in oyster sauce",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "pork satay",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "spicy chicken salad",
+      "protein": 0.5,
+      "starch": 0.1,
+      "cellulose": 0.4
+    },
+    {
+      "name": "noodles with fish curry",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pork sticky noodles",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pork with lemon",
+      "protein": 0.6,
+      "starch": 0.1,
+      "cellulose": 0.3
+    },
+    {
+      "name": "stewed pork leg",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "charcoal-boiled pork neck",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "fried mussel pancakes",
+      "protein": 0.5,
+      "starch": 0.3,
+      "cellulose": 0.2
+    },
+    {
+      "name": "deep fried chicken wing",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "barbecued red pork in sauce with rice",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "rice with roast duck",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "rice crispy pork",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "wonton soup",
+      "protein": 0.4,
+      "starch": 0.3,
+      "cellulose": 0.3
+    },
+    {
+      "name": "chicken rice curry with coconut",
+      "protein": 0.4,
+      "starch": 0.4,
+      "cellulose": 0.2
+    },
+    {
+      "name": "crispy noodles",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "egg noodle in chicken yellow curry",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "coconut milk soup",
+      "protein": 0.3,
+      "starch": 0.2,
+      "cellulose": 0.5
+    },
+    {
+      "name": "pho",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "hue beef rice vermicelli soup",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "vermicelli noodles with snails",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "fried spring rolls",
+      "protein": 0.3,
+      "starch": 0.4,
+      "cellulose": 0.3
+    },
+    {
+      "name": "steamed rice roll",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "shrimp patties",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "ball shaped bun with pork",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "coconut milk-flavored crepes with shrimp and beef",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "small steamed savory rice pancake",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "glutinous rice balls",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "loco moco",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "haupia",
+      "protein": 0.1,
+      "starch": 0.4,
+      "cellulose": 0.5
+    },
+    {
+      "name": "malasada",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "laulau",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "spam musubi",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "oxtail soup",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "adobo",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "lumpia",
+      "protein": 0.4,
+      "starch": 0.4,
+      "cellulose": 0.2
+    },
+    {
+      "name": "brownie",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "churro",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "jambalaya",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "nasi goreng",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "ayam goreng",
+      "protein": 0.6,
+      "starch": 0.3,
+      "cellulose": 0.1
+    },
+    {
+      "name": "ayam bakar",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "bubur ayam",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "gulai",
+      "protein": 0.4,
+      "starch": 0.3,
+      "cellulose": 0.3
+    },
+    {
+      "name": "laksa",
+      "protein": 0.3,
+      "starch": 0.5,
+      "cellulose": 0.2
+    },
+    {
+      "name": "mie ayam",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "mie goreng",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "nasi campur",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "nasi padang",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "nasi uduk",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "babi guling",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "kaya toast",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "bak kut teh",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "curry puff",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "chow mein",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    },
+    {
+      "name": "zha jiang mian",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "kung pao chicken",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "crullers",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "eggplant with garlic sauce",
+      "protein": 0.1,
+      "starch": 0.2,
+      "cellulose": 0.7
+    },
+    {
+      "name": "three cup chicken",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "bean curd family style",
+      "protein": 0.6,
+      "starch": 0.2,
+      "cellulose": 0.2
+    },
+    {
+      "name": "salt & pepper fried shrimp with shell",
+      "protein": 0.7,
+      "starch": 0.2,
+      "cellulose": 0.1
+    },
+    {
+      "name": "baked salmon",
+      "protein": 0.8,
+      "starch": 0.1,
+      "cellulose": 0.1
+    },
+    {
+      "name": "braised pork meat ball with napa cabbage",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "winter melon soup",
+      "protein": 0.2,
+      "starch": 0.2,
+      "cellulose": 0.6
+    },
+    {
+      "name": "steamed spareribs",
+      "protein": 0.7,
+      "starch": 0.1,
+      "cellulose": 0.2
+    },
+    {
+      "name": "chinese pumpkin pie",
+      "protein": 0.2,
+      "starch": 0.6,
+      "cellulose": 0.2
+    },
+    {
+      "name": "eight treasure rice",
+      "protein": 0.2,
+      "starch": 0.7,
+      "cellulose": 0.1
+    },
+    {
+      "name": "hot & sour soup",
+      "protein": 0.3,
+      "starch": 0.2,
+      "cellulose": 0.5
+    },
+    {
+      "name": "mapo tofu",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "katsu curry",
+      "protein": 0.4,
+      "starch": 0.4,
+      "cellulose": 0.2
+    },
+    {
+      "name": "gyudon",
+      "protein": 0.4,
+      "starch": 0.5,
+      "cellulose": 0.1
+    },
+    {
+      "name": "onigiri",
+      "protein": 0.1,
+      "starch": 0.8,
+      "cellulose": 0.1
+    },
+    {
+      "name": "tom yum goong",
+      "protein": 0.5,
+      "starch": 0.2,
+      "cellulose": 0.3
+    },
+    {
+      "name": "som tum",
+      "protein": 0.1,
+      "starch": 0.2,
+      "cellulose": 0.7
+    },
+    {
+      "name": "hainanese chicken rice",
+      "protein": 0.5,
+      "starch": 0.4,
+      "cellulose": 0.1
+    },
+    {
+      "name": "pad thai",
+      "protein": 0.3,
+      "starch": 0.6,
+      "cellulose": 0.1
+    }
+  ]
+}

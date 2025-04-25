@@ -28,7 +28,7 @@ def health_check(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/upload/', views.upload_api),
-    path('api/see-post/', views.get_user_posts),
+    path('api/see-post', views.get_user_posts),
     # Serve media files regardless of DEBUG setting
     path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT}),  # Not recommended for production
     path('api/challenges', views.get_challenge),

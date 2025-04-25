@@ -1,3 +1,4 @@
+import uuid
 from django.shortcuts import render
 from django.conf import settings  # To access MEDIA_ROOT if needed directly
 import os  # To construct file paths
@@ -44,6 +45,7 @@ except Exception as e:
 
 # Path to the score.json file
 SCORE_JSON_PATH = os.path.join(settings.BASE_DIR, 'food_backend', 'data', 'score.json')
+FOOD_NUTRITION_JSON_PATH = os.path.join(settings.BASE_DIR, 'food_backend', 'data', 'nutrition.json')
 
 try:
     with open(SCORE_JSON_PATH, 'r') as f:
@@ -53,6 +55,13 @@ except Exception as e:
     FOOD_HEALTH_SCORES = {}
     logger.error(f"Error loading food health scores: {e}", exc_info=True)
 
+try:
+    with open(FOOD_NUTRITION_JSON_PATH, 'r') as f:
+        FOOD_NUTRITION = json.load(f)
+    logger.info(f"Successfully loaded food nutrition data from {FOOD_NUTRITION_JSON_PATH}")
+except Exception as e:
+    FOOD_NUTRITION = {}
+    logger.error(f"Error loading food nutrition data: {e}", exc_info=True)
 
 # --- AI Inference Function ---
 def run_yolo_inference(image_path):
@@ -95,13 +104,21 @@ def run_yolo_inference(image_path):
                 # --- Health Score Lookup ---
                 lookup_key = class_name.lower()
                 health_score = FOOD_HEALTH_SCORES.get(lookup_key)
+                # --- Nutrition Score Lookup ---
+                nutrition_score = None  # Default to None if not found
+                if FOOD_NUTRITION and 'foods' in FOOD_NUTRITION:
+                    for food_item in FOOD_NUTRITION['foods']:
+                        if food_item.get('name', '').lower() == lookup_key:
+                            nutrition_score = food_item  # Assign the whole nutrition dict
+                            break  # Stop searching once found
 
                 detected_objects.append({
                     "class_id": class_id,
                     "class_name": class_name,
                     "confidence": confidence,
                     "bounding_box": bounding_box,
-                    "health_score": health_score
+                    "health_score": health_score,
+                    "nutrition_score": nutrition_score,
                 })
 
         logger.info(f"Inference successful. Detected {len(detected_objects)} objects.")
@@ -200,7 +217,7 @@ def upload_api(request):
         # Save the image temporarily to get its full path
         uploaded_data = UploadedImage.objects.create(
             image=image,
-            client=current_client
+            client=current_client,
         )
         logger.info(f"Data saved with ID: {uploaded_data.id}, Image path: {uploaded_data.image.path}, Client: {current_client}")
         image_db_id = uploaded_data.id
@@ -265,13 +282,26 @@ def get_user_posts(request):
         client = Client.objects.get(id=client_id)
     except Client.DoesNotExist:
         return Response({"error": "Client not found"}, status=404)
-    posts = client.uploaded_images.all()
-    posts_data = [{
-        "id": post.id,
-        "image_url": post.image.url,
-        "text": post.text,
-        "uploaded_at": post.uploaded_at
-    } for post in posts]
+
+    # Fetch UserPost objects related to the client using the correct related_name
+    # Note: The related_name in UserPost model for client is 'user_post'
+
+    posts = UserPost.objects.filter(client=client).order_by('-uploaded_at')
+    # Prepare the data for the response
+    posts_data = []
+    for post in posts:
+        post_data = {
+            "id": post.id,
+            "title": post.title,
+            "desc": post.desc,
+            "coin": post.coin,
+            "cost": post.cost,
+            "share_able": post.share_able,
+            "uploaded_at": post.uploaded_at,
+            "challenge_desc": post.challenge.desc if post.challenge else None,
+        }
+        posts_data.append(post_data)
+
     return Response({"posts": posts_data})
 
 
@@ -331,18 +361,6 @@ def get_stars(request):
 @api_view(['POST'])
 @parser_classes([MultiPartParser, FormParser, JSONParser])  # Add JSONParser to supported parsers
 def upload_post(request):
-    '''class UserPost(models.Model):
-    coin = models.IntegerField(blank=True, null=True)
-    title = models.CharField(max_length=100, blank=True, null=True)
-    cost = models.IntegerField(blank=True, null=True)
-    share_able = models.BooleanField(default=False)
-    desc = models.TextField(blank=True, null=True)
-    challenge = models.ForeignKey(Challenge, on_delete=models.SET_NULL, related_name='user_post', blank=True, null=True)
-    client = models.ForeignKey(Client, on_delete=models.SET_NULL, related_name='user_post', blank=True, null=True)
-
-    uploaded_at = models.DateTimeField(auto_now_add=True)
-    def __str__(self):
-        return f"Post {self.id} by {self.client.name if self.client else 'Unknown'}"'''
     form_data = request.data
 
     # Extract data from the form
@@ -402,6 +420,7 @@ def upload_post(request):
                 client.coin = post.coin
             else:
                 client.coin += post.coin
+                client.num_posts += 1  # Increment the number of posts
             # Save the client after updating stars
             client.save()
         
@@ -409,7 +428,8 @@ def upload_post(request):
             "message": "Post created successfully",
             "post_id": post.id,
             "title": post.title,
-            "client_id": client_id
+            "client_id": client_id,
+            "client_posts": client.num_posts,
         }, status=200)
         
     except Client.DoesNotExist:

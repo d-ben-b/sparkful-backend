@@ -27,13 +27,14 @@ SECRET_KEY = 'django-insecure-%1)ar3ezmvf67cs_a(9lzbx#ty^on=z)2u2zd)n3-317$%34t^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1","sparkful-backend.onrender.com","0.0.0.0","localhost"]
+ALLOWED_HOSTS = ["127.0.0.1","sparkful-backend.onrender.com","0.0.0.0","localhost","4efd-140-116-49-123.ngrok-free.app"]
 
 CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGINS = [
     "https://你的正式域名",
-    "http://localhost:5173",  # Vue 預設 port
+    "http://localhost:5173",
+    "https://sparkful-frontend.vercel.app"
 ]
 
 CORS_ALLOW_METHODS = [
@@ -55,6 +56,7 @@ CORS_ALLOW_HEADERS = [
     "user-agent",
     "x-csrftoken",
     "x-requested-with",
+    "ngrok-skip-browser-warning",
 ]
 
 # Application definition
@@ -108,11 +110,14 @@ WSGI_APPLICATION = 'food_backend.wsgi.application'
 
 # Add the new DATABASES configuration using dj_database_url
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this with your local development database URL if needed
-        default='postgresql://sparkful_user:VtteLiGmOiMhctqeqlwMZw7V6RFZ7l3E@dpg-d0493fk9c44c739d9gg0-a.oregon-postgres.render.com/sparkful',
-        conn_max_age=600  # Optional: connection pooling setting
-    )
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "sparkful",
+        "USER": "root",
+        "PASSWORD": "admin",
+        "HOST": "127.0.0.1",
+        "PORT": "3306",
+    }
 }
 
 # If Render provides a PostgreSQL database, ensure psycopg2 is installed:
