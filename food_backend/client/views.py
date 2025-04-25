@@ -282,23 +282,14 @@ def get_user_posts(request):
         client = Client.objects.get(id=client_id)
     except Client.DoesNotExist:
         return Response({"error": "Client not found"}, status=404)
-
-    # Fetch UserPost objects related to the client using the correct related_name
-    # Note: The related_name in UserPost model for client is 'user_post'
-
-    posts = UserPost.objects.filter(client=client).order_by('-uploaded_at')
+    posts = UploadedImage.objects.filter(client=client).order_by('-uploaded_at')
     # Prepare the data for the response
     posts_data = []
     for post in posts:
         post_data = {
             "id": post.id,
-            "title": post.title,
-            "desc": post.desc,
-            "coin": post.coin,
-            "cost": post.cost,
-            "share_able": post.share_able,
-            "uploaded_at": post.uploaded_at,
-            "challenge_desc": post.challenge.desc if post.challenge else None,
+            "img": post.image.url if post.image else None,
+            "stars": post.stars,
         }
         posts_data.append(post_data)
 
