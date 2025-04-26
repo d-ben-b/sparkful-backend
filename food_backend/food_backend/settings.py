@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-%1)ar3ezmvf67cs_a(9lzbx#ty^on=z)2u2zd)n3-317$%34t^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1","sparkful-backend.onrender.com","0.0.0.0","localhost","4c8f-2001-b011-3012-12f2-9dd0-ed6f-7721-ae28.ngrok-free.app"]
+ALLOWED_HOSTS = ["127.0.0.1","sparkful-backend.onrender.com","0.0.0.0","localhost","8ecf-2402-7500-578-27f0-7dba-8259-e828-c3ee.ngrok-free.app"]
 
 CORS_ALLOW_ALL_ORIGINS = False
 
