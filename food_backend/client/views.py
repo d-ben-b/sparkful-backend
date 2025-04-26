@@ -413,8 +413,10 @@ def upload_post(request):
                 client.coin += post.coin
                 client.num_posts += 1  # Increment the number of posts
             # Save the client after updating stars
+            if client.num_posts%2 == 0:
+                client.level += 1  # Increment the level
             client.save()
-        
+
         return Response({
             "message": "Post created successfully",
             "post_id": post.id,
@@ -444,6 +446,23 @@ def get_user_coins(request):
         return Response({"error": "Client not found"}, status=404)
     except Exception as e:
         return Response({"error": str(e)}, status=500)
+    
+@api_view(['GET'])
+def get_user_level(request):
+    client_id = request.query_params.get('client_id')
+    if not client_id:
+        return Response({"error": "Missing client_id"}, status=400)
+    try:
+        client = Client.objects.get(id=client_id)
+        return Response({
+            "client_id": client.id,
+            "level": client.level
+        })
+    except Client.DoesNotExist:
+        return Response({"error": "Client not found"}, status=404)
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
+
 @api_view(['GET'])
 def initial_test(request):
     # Test endpoint to check if the server is running

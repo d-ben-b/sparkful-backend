@@ -9,6 +9,7 @@ class Client(models.Model):
     address = models.TextField(blank=True, null=True)
     coin = models.IntegerField(blank=True, null=True)
     num_posts = models.IntegerField(blank=True, null=True, default=0)
+    level = models.IntegerField(blank=True, null=True, default=0)
 
     def __str__(self):
         return self.name if self.name else "Unnamed Client"

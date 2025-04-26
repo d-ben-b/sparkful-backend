@@ -37,6 +37,7 @@ urlpatterns = [
     path('api/get-user-coins', views.get_user_coins),
     path('api/initialize', views.initialize),
     path('', health_check, name='health-check'),
+    path('api/get-user-level', views.get_user_level),
 ]
 
 # Optionally, if you still want the debug-only configuration:
